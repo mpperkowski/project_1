@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    color: #665544;
+    text-align: center;
+}
+
+#website-form {
+    width: 700px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#website-input {
+    font-size: 120%;
+    color: #5a5854;
+    background-color: #f2f2f2;
+    border: 3px solid #bdbdbd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-image: url ("assets/images/search.png");
+    margin: 0 auto;
+    width: 80%;
+}
+
+p {
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Francois One', sans-serif;
+    font-size: 40px;
+    padding: 0px;
+}
+
+
+#add-website {
+    color: #F26767;
+    border-radius: 10px;
+    font-family: 'Chivo:400', sans-serif;
+    font-size: 275%;
+    margin-top: 4%;
+    background-color: #F4F4F4;
+}
+
+#add-website:hover {
+    color: #F26767;
+    border-radius: 10px;
+    font-family: 'Chivo:400', sans-serif;
+    font-size: 275%;
+    margin-top: 4%;
+    background-color: white;
+}
+
+#websitePreview {
+    padding-top: 5%;
+    height: 800px;
+    width: 1500px;
+    margin: 0 auto;
+}
+
+
+.websites {
+    float: left;
+    margin: 0 auto;
+}
+
+.outerHolder {
+    float: left;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.holder {
+    position: relative;
+}
+
+.site {
+    margin: 10px;
+    width: 350px;
+    height: 300px;
+    float: right;
+    border-style: solid;
+    border-width: 8px;
+}
+.panel {
+    padding: 50px;
+    display: none;
+}
+
+.panel, .flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+    overflow:hidden;
+}
+
+.logo{
+    padding-top: 5%;
+    width: 40%;
+    height: auto;
+}
+
+.info {
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    z-index: 1;
+    width: 350px;
+    height: 50px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+

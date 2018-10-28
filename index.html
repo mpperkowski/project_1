@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Look Lander</title>
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- custom css -->
+    <link href="assets/css/style3.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:500|Black+Han+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrap">
+        <div id="container">
+            <img src="assets/images/print.png" class="print" alt="print">
+        </div>
+
+        <div id="top"></div>
+
+        <div class="box">
+            <img src="assets/images/logo2.png" class="logo2-item" alt="logo2">
+        </div>
+
+        <div class="box">
+            <img src="assets/images/logo.png" class="logo-item" alt="logo">
+        </div>
+
+    </div>
+
+
+    <form class="SearchBox">
+        <div class="Field Field--is-search">
+            <input type="text" name="search" id="website-input" placeholder="    What Would You Like To See Today?"
+                class="SearchBox-query" />
+            <input type="submit" id="add-website" value="👀" class="buttonLoad">
+        </div>
+    </form>
+    <div id="footer"></div>
+
+</body>
+
+<script>
+    $(document).ready(function () {
+        $("#add-website").on("click", function (e) {
+            e.preventDefault();
+
+            var userInput = $("#website-input").val()
+            if (userInput.length === 0) {
+                return
+            }
+
+            localStorage.setItem("searchTerm", userInput)
+            window.location.href = "results.html"
+
+        })
+    })
+</script>
+<script></script>
+
+</html>
